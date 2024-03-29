@@ -10,17 +10,15 @@
 重写：打开蜜雪冰城小程序，进入我的页面.
 
 [Script]
-http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60, tag=蜜雪冰城获取token
+http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/mxbc.js, requires-body=true, timeout=60, tag=蜜雪冰城获取token
 
 Quautumult X
-rewritre_local
 
+「rewritre_local」
+^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/mxbc.js
 
-^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info url script-response-body https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js
-
-task_local
-
-20 8 * * * https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, tag=蜜雪冰城小程序签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want.png, enabled=true
+「task_local」
+20 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/mxbc.js, tag=蜜雪冰城小程序签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want.png, enabled=true
 
 [MITM]
 hostname = mxsa.mxbc.net
