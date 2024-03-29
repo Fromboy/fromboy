@@ -33,7 +33,7 @@ Quantumult X:
 3.关闭获取ck脚本，避免产生不必要的mitm。
 
 task_local
-30 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/hsay.js, tag=🥤沪上阿姨小程序签到, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/Naruto/Naruto-1072.png, enabled=true
+30 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/hsay.js, tag=🥤沪上阿姨小程序签到, img-url=https://raw.githubusercontent.com/Fromboy/Icon/main/hsay.png, enabled=true
 rewrite_local
 ^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/hsay.js
 
