@@ -9,7 +9,7 @@
 图标：https://raw.githubusercontent.com/leiyiyan/resource/main/icons/lhtj.png
 Surge
 [Script]
-http-request ^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mvc\-prod\/openapi\/task\/v1\/signature\/clock script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js, timeout=60, tag=龙湖天街获取Cookie
+http-request ^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mvc\-prod\/openapi\/task\/v1\/signature\/clock script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/lhtj.js, timeout=60, tag=龙湖天街获取Cookie
 
 [MITM]
 hostname = gw2c-hw-open.longfor.com
@@ -17,11 +17,10 @@ hostname = gw2c-hw-open.longfor.com
 
 Quantumult X
 task_local
-20 8 * * * https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js, tag=龙湖天街小程序签到, img-url=https://raw.githubusercontent.com/leiyiyan/resource/main/icons/lhtj.png, enabled=true
+20 8 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/lhtj.js, tag=龙湖天街小程序签到, img-url=https://raw.githubusercontent.com/leiyiyan/resource/main/icons/lhtj.png, enabled=true
 
 Rewrite_local
-^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mvc\-prod\/openapi\/task\/v1\/signature\/clock url script-response-body https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js
-
+^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mvc\-prod\/openapi\/task\/v1\/signature\/clock url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/lhtj.js
 [MITM]
 hostname = gw2c-hw-open.longfor.com
 
