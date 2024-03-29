@@ -18,7 +18,7 @@ Quautumult X
 ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/mxbc.js
 
 「task_local」
-20 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/mxbc.js, tag=蜜雪冰城小程序签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want.png, enabled=true
+20 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/mxbc.js, tag=蜜雪冰城小程序签到, img-url=https://raw.githubusercontent.com/Fromboy/Icon/main/mxbc.png, enabled=true
 
 [MITM]
 hostname = mxsa.mxbc.net
