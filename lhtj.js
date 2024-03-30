@@ -5,7 +5,7 @@
 @Description: 龙湖天街小程序签到、抽奖
 ------------------------------------------
 获取 Cookie：打开龙湖天街小程序，进入 我的 - 签到赚珑珠 - 任务赚奖励 - 马上签到。
-
+https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js
 图标：https://raw.githubusercontent.com/leiyiyan/resource/main/icons/lhtj.png
 Surge
 [Script]
