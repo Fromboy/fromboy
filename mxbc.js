@@ -8,6 +8,7 @@
 2024.03.29 重构代码，支持多账号，增加雪王铺任务。更改ck格式,需要清空变量重新获取.
 
 重写：打开蜜雪冰城小程序，进入我的页面.
+https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js
 
 [Script]
 http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/mxbc.js, requires-body=true, timeout=60, tag=蜜雪冰城获取token
