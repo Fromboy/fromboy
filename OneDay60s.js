@@ -47,14 +47,14 @@
 
 ```properties
 [task_local]
-30 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/OneDay60s.js, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png, enabled=true
+30 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/OneDay60s.js, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/Fromboy/Icon/main/OneDay60S.png, enabled=true
 ```
 
 ### 配置 (Loon)
 
 ```properties
 [Script]
-cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/OneDay60s.js, timeout=10, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png
+cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/OneDay60s.js, timeout=10, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/Fromboy/Icon/main/OneDay60S.png
 ```
 
 ### 配置 (Surge)
