@@ -10,11 +10,13 @@ const $ = new Env("奈雪点单签到")
 重写:打开小程序，点击我的，进入签到页面。获取ck后不要再打开小程序，避免ck失效
 Surge
 [Script]
-http-request ^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, requires-body=true, timeout=60, tag=奈雪点单获取token
+http-request ^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/naixue.js, requires-body=true, timeout=60, tag=奈雪点单获取token
 
 Quantumult X
-^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo url script-analyze-echo-response https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js
+^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo url script-analyze-echo-response https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/naixue.js
 
+[task_local]
+20 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/naixue.js, tag=奈雪的茶🍵签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/naixue.png, enabled=true
 
 [MITM]
 hostname = tm-web.pin-dao.cn
