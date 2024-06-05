@@ -1,5 +1,5 @@
 /*
-#金多多商城微信小程序使用方法：扫码关注公众号-个人中心-右上角三个点-刷新 获取cookie
+#金多多商城微信小程序使用方法：扫码关注公众号-金多多电子贸易-个人中心-右上角三个点-刷新 获取cookie
 #  Quantumult   获取cookie
 ^https:\/\/www\.jindd\.shop\/addons\/yun_shop\/api.php\?i=12&uuid=0&type=1&mid=(\d+)&version=v1.1.137&basic_info=1&route=member.member.wxJsSdkConfig url script-response-body https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/JinDD/JinDD.js
 
