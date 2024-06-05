@@ -3,27 +3,23 @@ new Env('春风摩托');
 @Author: Leiyiyan
 @Date: 2024-05-19 21:28
 
-@Description:
-春风摩托 每日签到、会员任务，积分可兑换实物
+⏰春风摩托 每日签到、会员任务，积分可兑换实物
+⏰获取 Cookie 方式：cfmoto app - 我的
+#春风摩托摩托车获取Cookie🚗
 
-获取 Cookie 方式：cfmoto app - 我的
-
-
-
-
-
-
-
-
-
+Quantumult X 
+# 获取 Cookie
+^https:\/\/c\.cfmoto\.com\/jv\/user\/user_info url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/cfmoto.js
+# 脚本任务
+0 7 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/cfmoto.js, tag=春风摩托, img-url=https://raw.githubusercontent.com/Fromboy/Icon/main/CFMOTO.png, enabled=true
 
 Surge
 [Script]
 # 获取 Cookie
-http-response ^https:\/\/c\.cfmoto\.com\/jv\/user\/user_info script-path=https://github.com/leiyiyan/resource/blob/main/script/cfmoto/cfmoto.js, requires-body=true, timeout=60, tag=春风摩托 Cookie
+http-response ^https:\/\/c\.cfmoto\.com\/jv\/user\/user_info script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/cfmoto.js, requires-body=true, timeout=60, tag=春风摩托 Cookie
 
 # 脚本任务
-cron "0 7 * * *" script-path=https://github.com/leiyiyan/resource/blob/main/script/cfmoto/cfmoto.js, tag=春风摩托
+cron "0 7 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/cfmoto.js, tag=春风摩托
 
 [Rewrite]
 # 开屏广告
@@ -46,6 +42,30 @@ hostname = c.cfmoto.com
 6、如果任何单位或个人认为此脚本可能涉嫌侵犯其权利，应及时通知并提供身份证明，所有权证明，我们将在收到认证文件确认后删除此脚本。
 7、所有直接或间接使用、查看此脚本的人均应该仔细阅读此声明。本人保留随时更改或补充此声明的权利。一旦您使用或复制了此脚本，即视为您已接受此免责声明。
  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // env.js 全局
 const $ = new Env("春风摩托");
