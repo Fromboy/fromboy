@@ -1,23 +1,25 @@
 /*
 #金多多商城微信小程序使用方法：扫码关注公众号-金多多电子贸易-个人中心-右上角三个点-刷新 获取cookie
 #  Quantumult   获取cookie
-^https:\/\/www\.jindd\.shop\/addons\/yun_shop\/api.php\?i=12&uuid=0&type=1&mid=(\d+)&version=v1.1.137&basic_info=1&route=member.member.wxJsSdkConfig url script-response-body https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/JinDD/JinDD.js
+
+[rewrite_local]
+^https:\/\/www\.jindd\.shop\/addons\/yun_shop\/api.php\?i=12&uuid=0&type=1&mid=(\d+)&version=v1.1.137&basic_info=1&route=member.member.wxJsSdkConfig url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/JinDD.js
 
 
 [task_local]
-13 0,14 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/JinDD/JinDD.js, tag=金多多商城, img-url=https://raw.githubusercontent.com/Fromboy/Icon/main/JinDD.png, enabled=true
+13 0,14 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/JinDD.js, tag=金多多商城, img-url=https://raw.githubusercontent.com/Fromboy/Icon/main/JinDD.png, enabled=true
 
 MITM
-hostname = %APPEND% www.jindd.shop
+hostname = www.jindd.shop
 
 
 
 
 #  Surge   获取cookie
-http-response ^https:\/\/www\.jindd\.shop\/addons\/yun_shop\/api.php\?i=12&uuid=0&type=1&mid=(\d+)&version=v1.1.137&basic_info=1&route=member.member.wxJsSdkConfig, script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/JinDD/JinDD.js, requires-body=true, timeout=60, tag=JinDD.js
+http-response ^https:\/\/www\.jindd\.shop\/addons\/yun_shop\/api.php\?i=12&uuid=0&type=1&mid=(\d+)&version=v1.1.137&basic_info=1&route=member.member.wxJsSdkConfig, script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/JinDD.js, requires-body=true, timeout=60, tag=JinDD.js
 
 # 
-cron "33 0,14 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/JinDD/JinDD.js, timeout=60, tag=JinDD.js
+cron "33 0,14 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/JinDD.js, timeout=60, tag=JinDD.js
 
 MITM
 
