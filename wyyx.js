@@ -1,21 +1,25 @@
 /*
-微信小程序:网易严选       仅支持qx
+微信小程序: 网易严选       仅支持qx
 小白制作，如有问题，请多多包涵
 支持功能：1.自动签到，每天签到得现金，可以购物也可以兑换红包
 2.网易农场，自动收取气泡水滴，三餐水滴，免费水滴和自动浇水功能
 3.新增浏览商品获取水滴
 本地重写:
 [rewrite_local]
-act/cdn/cloudConfig.json url script-request-header wyyx.js
+act/cdn/cloudConfig.json url script-request-header https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/wyyx.js
 
 [MITM]
 hostname = miniapp.you.163.com
+
+[task_local]
+13 8,12,16,18,20 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/wyyx.js, tag=网易严选, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MDSS.png, enabled=true
 正常登录后进入小程序首页获取变量，变量名:wyyxhd
 支持多账号
 boxjs地址: 
 
-脚本地址: 
+脚本地址: https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/wyyx.js
 定时每天5次: 13 8,12,16,18,20 * * *
+
 */
 
 
