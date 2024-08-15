@@ -1,5 +1,5 @@
 // Quantumult X Script to set specific country nodes with unified name and flag
-// by ChatGPT
+// by ChatGPT 修改节点名字加国旗
 
 // 定义规则：根据节点名称设置统一的名称和国旗
 const modifyNodes = (nodeList) => {
