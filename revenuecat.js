@@ -10,7 +10,7 @@
 > Suitable          自行观看“# > ”注释内容，解锁是暂时的，购买也不是永久的[订阅、跑路]
 > Attention         📣个别失效的APP请相关需求者自行降级、或寻找替代品、或购买支持
 > Attention         如需引用请注明出处，谢谢合作！
-> ScriptURL         https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js
+> ScriptURL        
 
 
 # ========解锁列表======== #
