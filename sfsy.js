@@ -11,7 +11,7 @@
 [Script]
 http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/sfsy.js, requires-body=true, timeout=60, tag=顺丰速运获取token
 
-cron "25 9 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/sfsy.js, tag=顺丰速运签到
+cron "25 9,15 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/sfsy.js, tag=顺丰速运签到
 
 [MITM]
 hostname = mcs-mimp-web.sf-express.com
