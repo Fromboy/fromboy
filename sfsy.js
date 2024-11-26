@@ -6,8 +6,12 @@
 ------------------------------------------
 重写:打开小程序，进入我的页面，点击优惠券页面获取token。支持多账号。
 
+------------------ Loon 配置 ------------------
+
 [Script]
 http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/sfsy.js, requires-body=true, timeout=60, tag=顺丰速运获取token
+
+cron "25 9 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/sfsy.js, tag=顺丰速运签到
 
 [MITM]
 hostname = mcs-mimp-web.sf-express.com
